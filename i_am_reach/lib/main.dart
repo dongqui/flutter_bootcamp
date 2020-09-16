@@ -1,12 +1,17 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(
-    MaterialApp(
+  runApp(MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
       home:  Scaffold(
         backgroundColor: Colors.blueGrey,
         appBar: AppBar(
-          title: Text('I am Rich'),
+          title: Text('I am Rh'),
           backgroundColor: Colors.blueGrey[900],
         ),
         body: Center(
@@ -15,6 +20,6 @@ void main() {
           ),
         )
       )
-    )
-  );
+    );
+  }
 }
